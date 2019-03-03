@@ -1,0 +1,24 @@
+{
+	"extends": [
+		"tslint:latest",
+		"tslint-config-airbnb"
+	],
+	"rules": {
+		"ter-indent": [true, "tab"],
+		"max-line-length": [true, 150],
+		"strict-boolean-expressions": false,
+		"no-implicit-dependencies": [true, "dev"],
+		"object-literal-sort-keys": false,
+		"object-literal-shorthand": false,
+		"no-console": false,
+		"trailing-comma": false,
+		"ter-arrow-parens": false,
+		"no-increment-decrement": false,
+		"no-var-requires": false,
+		"no-this-assignment": false,
+		"variable-name": [true, "allow-leading-underscore"],
+		"only-arrow-functions": false,
+		"ban-types": false,
+		"prefer-conditional-expression": false
+	}
+}

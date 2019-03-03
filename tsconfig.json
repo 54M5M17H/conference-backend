@@ -1,0 +1,32 @@
+{
+	"compilerOptions": {
+		"target": "es6",
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"allowSyntheticDefaultImports": true,
+		"jsx": "preserve",
+		"allowJs": false,
+		"importHelpers": true,
+		"declaration": false,
+		"alwaysStrict": true,
+		"sourceMap": true,
+		"forceConsistentCasingInFileNames": true,
+		"noFallthroughCasesInSwitch": true,
+		"noImplicitReturns": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noImplicitAny": false,
+		"noImplicitThis": false,
+		"strictNullChecks": false,
+		"removeComments": true,
+        "watch": false,
+        "outDir": "dist"
+	},
+	"include": [
+		"src/**/*"
+	],
+	"exclude": [
+		"test/**/*",
+		"src/tools/*"
+	]
+}

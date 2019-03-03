@@ -1,0 +1,8 @@
+--reporter spec
+--ui bdd
+--recursive
+--bail
+--require ts-node/register
+--require source-map-support/register
+--require test/support/setup.ts test/support/apiHelpers.ts
+test/**/*.ts
