@@ -1,0 +1,22 @@
+version: '3.1'
+
+services:
+
+  mongo:
+    image: mongo:4.0.6
+    restart: always
+    ports:
+      - 27017:27017
+
+  conference-api:
+    build:
+      context: ../
+      dockerfile: ./build/Dockerfile
+    restart: always
+    ports:
+      - 3000:3000
+    depends_on:
+      - "mongo"
+    network_mode: "host"
+    environment:
+      - DEBUG=*

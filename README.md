@@ -58,6 +58,8 @@ If mongo is running you can, build using `npm run build`, run the current build 
 
 Alternatively, if you have a recent version of Docker installed, you can run `npm run docker-start` to run a `docker-compose` configuration which will launch both mongo & this api inside their own containers, w/ hosting configured such that they can communicate. You can use `npm run docker-stop` to kill both, & `npm run docker-rebuild` to force a rebuild of the images, should you make any changes to the repo. *Ensure that you do not have a mongo daemon running before running the mongo docker container.*
 
+**If running on Linux, append `:linux` to each of the npm docker scripts, for correct networking.**
+
 To just run mongo in dokcer, use `npm run docker-mongo`
 
 The api will be exposed at localhost port 3000, whether you are running natively or inside the docker container.

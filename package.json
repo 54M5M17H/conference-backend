@@ -14,7 +14,12 @@
 
 		"docker-start": "docker-compose -f build/docker-compose.yml up -d",
 		"docker-stop": "docker-compose -f build/docker-compose.yml stop",
-		"docker-rebuild": "npm run docker-start -- --build"
+		"docker-rebuild": "npm run docker-start -- --build",
+
+		"docker-start:linux": "docker-compose -f build/docker-compose-linux.yml up -d",
+		"docker-stop:linux": "docker-compose -f build/docker-compose-linux.yml stop",
+		"docker-rebuild:linux": "npm run docker-start:linux -- --build"
+
 	},
 	"author": "Sam Smith (iamsamsmith.co)",
 	"license": "ISC",
