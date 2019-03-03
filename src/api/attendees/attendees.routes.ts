@@ -13,6 +13,7 @@ attendeesRouter.get('/:attendeeId', async (ctxt) => {
 
 attendeesRouter.post('/', async (ctxt) => {
 	ctxt.body = await attendeesController.create(ctxt.request.body);
+	ctxt.status = 201;
 });
 
 attendeesRouter.patch('/', async (ctxt) => {

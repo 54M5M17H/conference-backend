@@ -13,6 +13,7 @@ speakersRouter.get('/:speakerId', async (ctxt) => {
 
 speakersRouter.post('/', async (ctxt) => {
 	ctxt.body = await speakersController.create(ctxt.request.body);
+	ctxt.status = 201;
 });
 
 speakersRouter.patch('/:speakerId', async (ctxt) => {

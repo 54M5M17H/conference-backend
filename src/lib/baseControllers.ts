@@ -41,7 +41,6 @@ export const patch = <T>(modelName: TResource) => async (id: string, data: Parti
 	return patchedResource;
 };
 
-// utitlies -- could be extracted
 const configureLimit = (limit: number = 10) => {
 	if (limit > 100) {
 		return 100;
